@@ -1,0 +1,12 @@
+# This is a Cargo config 
+
+[build]
+
+rustflags = ["-C", "link-args=-s"]
+
+[alias]
+b  = "build"
+t  = "test"
+r  = "run"
+rr = "run --release"
+

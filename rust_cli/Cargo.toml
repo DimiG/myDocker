@@ -1,0 +1,13 @@
+[package]
+name = "rust_cli"
+version = "0.0.2"
+authors = ["Dmitri G."]
+edition = "2018"
+
+[dependencies]
+colored = "1.7"
+
+[profile.release]
+opt-level = 'z'  # Optimize for size.
+lto = true
+
