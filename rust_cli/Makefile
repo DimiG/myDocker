@@ -6,6 +6,7 @@
 # Date: 2019-04-17
 
 ### VARIABLEs ###
+# For your environment change SOURCE path to $(pwd)
 SOURCE  = "/DM/Rust/rust_cli"
 TARGET  = "/home/rust/src"
 APPNAME = rust_cli
@@ -25,7 +26,7 @@ release: build/Release
 
 build/Release:
 	$(info =>>> Optimized release version for Linux)
-	docker run --rm -it -v $(SOURCE):$(TARGET) -w $(TARGET) ekidd/rust-musl-builder cargo build --release 
+	docker run --rm -it -v $(SOURCE):$(TARGET) -w $(TARGET) ekidd/rust-musl-builder cargo build --release
 
 minimal:
 	$(info =>>> Create the Docker image and run the program inside of it)

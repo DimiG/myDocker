@@ -1,7 +1,7 @@
 myDocker
 ========
 This repository dedicated to my [Docker][docker] scripts and configurations I use for developing and other purposes.  
-[Docker][docker] is "Enterprise Container Platform for High Velocity Innovation".  
+[Docker][docker] is a software technology providing containers, promoted by the company [Docker, Inc][docker]. [Docker][docker] provides an additional layer of abstraction and automation of operating-system-level virtualization on Windows and Linux. [Docker][docker] uses the resource isolation features of the Linux kernel such as `cgroups` and `kernel namespaces`, and a union-capable file system such as `OverlayFS` and others to allow independent "containers" to run within a single Linux instance, avoiding the overhead of starting and maintaining virtual machines (VMs). The sub-folders here are divided by application names and combine [Docker][docker] files for custom image creation with additional scripts.  
 
 Codes description
 -----------------
@@ -10,7 +10,12 @@ Codes description
 
 * `rust_cli`: This is the [Rust][rust] command line program which calls `ls` command when run. Here is the [Docker][docker] example for cross compilation from any platform to [Linux][linux] with [Docker][docker] help. Just compile the [Linux][linux] executable. I use the [Rust Musl builder][musl] container (*non official*) to make the static build of [Linux][linux] executable. This [Docker][docker] image is for compiling static [Rust][rust] binaries using `musl-libc` and `musl-gcc`, with static versions of useful C libraries. Supports `openssl` and `diesel` crates. More information is [HERE][musl].  
 
+* `nginx`: Custom image creation for [Nginx][nginx] WEB server.  
+
+* `shell_cnfg`: Docker specific aliases.  
+
 * `All Applications`:  
+   **Note:** For your environment you may change `SOURCE` path to `$(pwd)` in [Makefile][makefile].  
    ***Requires :*** [Docker][docker] correctly pre-installed on your OS platform.  
    ***Important:*** To compile I use [Makefile][makefile] which invokes the `Docker` commands.  
 
@@ -25,3 +30,4 @@ This code has been written by ©2019 DimiG
 [linux]:https://en.wikipedia.org/wiki/Linux
 [makefile]:https://en.wikipedia.org/wiki/Makefile
 [musl]:https://github.com/emk/rust-musl-builder
+[nginx]:https://en.wikipedia.org/wiki/Nginx
