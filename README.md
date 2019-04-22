@@ -10,9 +10,11 @@ Codes description
 
 * `rust_cli`: This is the [Rust][rust] command line program which calls `ls` command when run. Here is the [Docker][docker] example for cross compilation from any platform to [Linux][linux] with [Docker][docker] help. Just compile the [Linux][linux] executable. I use the [Rust Musl builder][musl] container (*non official*) to make the static build of [Linux][linux] executable. This [Docker][docker] image is for compiling static [Rust][rust] binaries using `musl-libc` and `musl-gcc`, with static versions of useful C libraries. Supports `openssl` and `diesel` crates. More information is [HERE][musl].  
 
+* `jekyll`: [Jekyll][jekyll] is a famous static site generator based on [Ruby][ruby] language. By `Makefile` I use [Docker][docker] to compile the site without any [Ruby][ruby] installation.  
+
 * `nginx`: Custom image creation for [Nginx][nginx] WEB server.  
 
-* `shell_cnfg`: Docker specific aliases.  
+* `shell_cnfg`: [Docker][docker] specific aliases.  
 
 * `All Applications`:  
    **Note:** For your environment you may change `SOURCE` path to `$(pwd)` in [Makefile][makefile].  
@@ -31,3 +33,5 @@ This code has been written by ©2019 DimiG
 [makefile]:https://en.wikipedia.org/wiki/Makefile
 [musl]:https://github.com/emk/rust-musl-builder
 [nginx]:https://en.wikipedia.org/wiki/Nginx
+[jekyll]:https://jekyllrb.com
+[ruby]:https://en.wikipedia.org/wiki/Ruby_(programming_language)
