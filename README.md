@@ -10,7 +10,9 @@ Codes description
 
 * `rust_cli`: This is the [Rust][rust] command line program which calls `ls` command when run. Here is the [Docker][docker] example for cross compilation from any platform to [Linux][linux] with [Docker][docker] help. Just compile the [Linux][linux] executable. I use the [Rust Musl builder][musl] container (*non official*) to make the static build of [Linux][linux] executable. This [Docker][docker] image is for compiling static [Rust][rust] binaries using `musl-libc` and `musl-gcc`, with static versions of useful C libraries. Supports `openssl` and `diesel` crates. More information is [HERE][musl].  
 
-* `jekyll`: [Jekyll][jekyll] is a famous static site generator based on [Ruby][ruby] language. By `Makefile` I use [Docker][docker] to compile the site without any [Ruby][ruby] installation.  
+* `jekyll`: [Jekyll][jekyll] is a famous static site generator based on [Ruby][ruby] language. By `Makefile` I call [Docker][docker] to compile the site without any [Ruby][ruby] installation.  
+
+* `platformio`: [PlatformIO][platformio] is an open source ecosystem for [IoT][iot] development. By `Makefile` I call [Docker][docker] to compile the [C++][cpp] code with help of [PlatformIO][platformio] without any local [Python][python] installation. The compilation and firmware upload process was tested by [WEMOS D1 mini ESP-8266EX][wemos] [micro-controller][mcu].  
 
 * `nginx`: Custom image creation for [Nginx][nginx] WEB server.  
 
@@ -35,3 +37,9 @@ This code has been written by ©2019 DimiG
 [nginx]:https://en.wikipedia.org/wiki/Nginx
 [jekyll]:https://jekyllrb.com
 [ruby]:https://en.wikipedia.org/wiki/Ruby_(programming_language)
+[platformio]:https://platformio.org
+[iot]:https://en.wikipedia.org/wiki/Internet_of_things
+[cpp]:https://en.wikipedia.org/wiki/C%2B%2B
+[python]:https://en.wikipedia.org/wiki/Python_(programming_language)
+[wemos]:https://wiki.wemos.cc/products:d1:d1_mini
+[mcu]:https://en.wikipedia.org/wiki/Microcontroller

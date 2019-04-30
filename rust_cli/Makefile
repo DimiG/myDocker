@@ -32,7 +32,7 @@ minimal:
 	$(info =>>> Create the Docker image and run the program inside of it)
 	docker build -t $(APPNAME) .
 	docker run --rm --name $(APPNAME) $(APPNAME)
-	@echo "[minimal]"
+	@echo "[MINIMAL]"
 
 clean:
 	$(info =>>> Cleaning UP...)

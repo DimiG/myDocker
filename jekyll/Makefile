@@ -25,17 +25,17 @@ help:
 	@echo " make clean   : Clean all build outputs"
 
 build: build/Release
-	@echo "[build]"
+	@echo "[BUILD]"
 
 start:
 	$(info =>>> Starting container...)
 	docker start -i $(CONTAINER_NAME)
-	@echo "[start]"
+	@echo "[START]"
 
 cont:
 	$(info =>>> Create container and DEBUG...)
 	docker run --name $(CONTAINER_NAME) -it -v $(SOURCE):$(TARGET) -w $(TARGET) -p 4000:4000 jekyll/jekyll:$(JEKYLL_VERSION) jekyll serve --watch --drafts
-	@echo "[cont]"
+	@echo "[CONT]"
 
 build/Release:
 	$(info =>>> Build Jekyll site...)
@@ -44,12 +44,12 @@ build/Release:
 update:
 	$(info =>>> Update Jekyll bundle...)
 	docker run --rm -it -v $(SOURCE):$(TARGET) jekyll/jekyll:$(JEKYLL_VERSION) bundle update
-	@echo "[update]"
+	@echo "[UPDATE]"
 
 new:
 	$(info =>>> Create the Jekyll site...)
 	docker run --rm -it -v $(SOURCE):$(TARGET) jekyll/jekyll:$(JEKYLL_VERSION) jekyll new .
-	@echo "[new]"
+	@echo "[NEW]"
 
 clean:
 	$(info =>>> Cleaning UP...)
