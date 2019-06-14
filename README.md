@@ -14,7 +14,7 @@ Codes description
 
 * `platformio`: [PlatformIO][platformio] is an open source ecosystem for [IoT][iot] development. By `Makefile` I call [Docker][docker] to compile the [C++][cpp] code with help of [PlatformIO][platformio] without any local [Python][python] installation. The compilation and firmware upload process was tested by [WEMOS D1 mini ESP-8266EX][wemos] [micro-controller][mcu].  
 
-* `nginx`: Custom image creation for [Nginx][nginx] WEB server.  
+* `nginx`: Custom container creation for [Nginx][nginx] WEB server (revised).  
 
 * `shell_cnfg`: [Docker][docker] specific aliases.  
 
