@@ -16,6 +16,8 @@ Codes description
 
 * `nginx`: Custom container creation for [Nginx][nginx] WEB server (revised).  
 
+* `golang`: Custom container creation for [Go Programming language][golang]. Compilation and run inside [Docker][docker] container.  
+
 * `shell_cnfg`: [Docker][docker] specific aliases.  
 
 * `All Applications`:  
@@ -43,3 +45,4 @@ This code has been written by ©2019 DimiG
 [python]:https://en.wikipedia.org/wiki/Python_(programming_language)
 [wemos]:https://wiki.wemos.cc/products:d1:d1_mini
 [mcu]:https://en.wikipedia.org/wiki/Microcontroller
+[golang]:https://golang.org
