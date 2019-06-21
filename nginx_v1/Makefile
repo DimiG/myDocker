@@ -19,7 +19,7 @@ CONT_VER     := v1.0
 
 ifeq ($(detected_OS),Windows)
   # *** Windows 7 specific ***
-  SOURCE = /DM/Nginx/html
+  SOURCE = /DM/nginx_v1/html
 endif
 ifeq ($(detected_OS),Darwin)
   # *** MacOS specific ***

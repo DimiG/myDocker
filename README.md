@@ -14,14 +14,16 @@ Codes description
 
 * `platformio`: [PlatformIO][platformio] is an open source ecosystem for [IoT][iot] development. By `Makefile` I call [Docker][docker] to compile the [C++][cpp] code with help of [PlatformIO][platformio] without any local [Python][python] installation. The compilation and firmware upload process was tested by [WEMOS D1 mini ESP-8266EX][wemos] [micro-controller][mcu].  
 
-* `nginx`: Custom container creation for [Nginx][nginx] WEB server (revised).  
+* `nginx_v1`: Custom container creation for [Nginx][nginx] WEB server (revised).  
+
+* `nginx_v2`: This is improved version of [Nginx][nginx] WEB server which allows to use [PaaS][paas] for [Docker][docker] containers. As example here, I use [Heroku][heroku] as a platform for [Docker][docker] containers created by current scripts. Pay attention that your [Heroku][heroku] `token access key` must be specified in the `TOKEN_H` system local environment variable.  
 
 * `golang`: Custom container creation for [Go Programming language][golang]. Compilation and run inside [Docker][docker] container.  
 
 * `shell_cnfg`: [Docker][docker] specific aliases.  
 
 * `All Applications`:  
-   **Note:** For your environment you may change `SOURCE` path to `$(pwd)` in [Makefile][makefile].  
+   **Note:** For your environment you may change `SOURCE` path to `$(pwd)` in [Makefile][makefile]. To get help message use: `make help`.  
    ***Requires :*** [Docker][docker] correctly pre-installed on your OS platform.  
    ***Important:*** To compile I use [Makefile][makefile] which invokes the `Docker` commands.  
 
@@ -46,3 +48,5 @@ This code has been written by ©2019 DimiG
 [wemos]:https://wiki.wemos.cc/products:d1:d1_mini
 [mcu]:https://en.wikipedia.org/wiki/Microcontroller
 [golang]:https://golang.org
+[paas]:https://en.wikipedia.org/wiki/Platform_as_a_service
+[heroku]:https://en.wikipedia.org/wiki/Heroku
