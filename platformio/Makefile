@@ -23,8 +23,10 @@ SOURCE_CFG = platformio-core
 TARGET_CFG = /home/dockeruser/.platformio
 
 ifeq ($(detected_OS),Windows)
-  # *** Windows 7 specific ***
-  SOURCE = /DM/MCU/esp8266_blink/$(PROJECT_NAME)
+  # *** Windows 7 specific    ***
+  # *** Change it to your     ***
+  # *** REAL Project Location ***
+  SOURCE = /DM/MCU/platformio/$(PROJECT_NAME)
 endif
 ifeq ($(detected_OS),Darwin)
   # *** MacOS specific ***

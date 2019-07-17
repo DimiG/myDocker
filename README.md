@@ -14,6 +14,8 @@ Codes description
 
 * `platformio`: [PlatformIO][platformio] is an open source ecosystem for [IoT][iot] development. By `Makefile` I call [Docker][docker] to compile the [C++][cpp] code with help of [PlatformIO][platformio] without any local [Python][python] installation. The compilation and firmware upload process was tested by [WEMOS D1 mini ESP-8266EX][wemos] [micro-controller][mcu].  
 
+* `micropython`: [Micropython][micropython] is a lean and efficient implementation of the Python 3 programming language that includes a small subset of the [Python][python] standard library and is optimized to run on micro controllers and in constrained environments. With `Makefile` creates the [Docker][docker] container which helps to escape the installation the [Python][python] on the host system. Also it helps develop code inside the Linux ecosystem without real Linux on the host (Windows and Mac are acceptable). The code was tested by [WEMOS D1 mini ESP-8266EX][wemos] [micro-controller][mcu].   
+
 * `nginx_v1`: Custom container creation for [Nginx][nginx] WEB server (revised).  
 
 * `nginx_v2`: This is improved version of [Nginx][nginx] WEB server which allows to use [PaaS][paas] for [Docker][docker] containers. As example here, I use [Heroku][heroku] as a platform for [Docker][docker] containers created by current scripts. Pay attention that your [Heroku][heroku] `token access key` must be specified in the `TOKEN_H` system local environment variable.  
@@ -25,7 +27,7 @@ Codes description
 * `All Applications`:  
    **Note:** For your environment you may change `SOURCE` path to `$(pwd)` in [Makefile][makefile]. To get help message use: `make help`.  
    ***Requires :*** [Docker][docker] correctly pre-installed on your OS platform.  
-   ***Important:*** To compile I use [Makefile][makefile] which invokes the `Docker` commands.  
+   ***Important:*** To compile I use [Makefile][makefile] which invokes the `Docker` commands. Pay attention that I have tested these scripts only with `Windows 7` inside the [VirtualBox][virtualbox]. The code MAY NOT WORK correctly on `Windows 10` or other platforms (`Linux` or `Mac`) as a host! Read [Makefile][makefile] carefully.  
 
 * `To be continued...`  
 
@@ -50,3 +52,5 @@ This code has been written by ©2019 DimiG
 [golang]:https://golang.org
 [paas]:https://en.wikipedia.org/wiki/Platform_as_a_service
 [heroku]:https://en.wikipedia.org/wiki/Heroku
+[micropython]:https://micropython.org
+[virtualbox]:https://www.virtualbox.org

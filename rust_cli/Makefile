@@ -7,7 +7,7 @@
 
 ### VARIABLEs ###
 # For your environment change SOURCE path to $(pwd)
-SOURCE  = "/DM/Rust/rust_cli"
+SOURCE  = "/DM/rust_cli"
 TARGET  = "/home/rust/src"
 APPNAME = rust_cli
 

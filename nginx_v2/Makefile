@@ -20,7 +20,9 @@ PORT_ADDR := 8080
 
 ### Assign values depending on platform
 ifeq ($(detected_OS),Windows)
-  # *** Windows 7 specific ***
+  # *** Windows 7 specific    ***
+  # *** Change it to your     ***
+  # *** REAL Project Location ***
   SOURCE := /DM/nginx_v2/html
 endif
 ifeq ($(detected_OS),Darwin)

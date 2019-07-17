@@ -6,6 +6,7 @@
 # Date: 2019-04-19
 
 ### VARIABLEs ###
+# For your environment change SOURCE path to $(pwd)
 SOURCE  = /DM/Jekyll/Blog
 TARGET  = /srv/jekyll
 JEKYLL_VERSION = latest
