@@ -8,7 +8,7 @@
 ### VARIABLEs ###
 # For your environment change SOURCE path to $(pwd)
 TARGET_NAME  := myapp
-SOURCE       := /DM/Golang/mytstapp
+SOURCE       := /DM/golang_v2/mytstapp
 TARGET       := /usr/src/$(TARGET_NAME)
 SOURCE_CFG   := golang-data
 TARGET_CFG1  := /tmp

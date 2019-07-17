@@ -20,7 +20,9 @@ Codes description
 
 * `nginx_v2`: This is improved version of [Nginx][nginx] WEB server which allows to use [PaaS][paas] for [Docker][docker] containers. As example here, I use [Heroku][heroku] as a platform for [Docker][docker] containers created by current scripts. Pay attention that your [Heroku][heroku] `token access key` must be specified in the `TOKEN_H` system local environment variable.  
 
-* `golang`: Custom container creation for [Go Programming language][golang]. Compilation and run inside [Docker][docker] container.  
+* `golang_v1`: Custom container creation for [Go Programming language][golang] (revised). Compilation and run inside [Docker][docker] container.  
+
+* `golang_v2`: My experiments with WEB applications created by [Go Programming language][golang] inside the [Docker][docker] container. Not completed yet...  
 
 * `shell_cnfg`: [Docker][docker] specific aliases.  
 
