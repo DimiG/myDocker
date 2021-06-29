@@ -24,6 +24,8 @@ Codes description
 
 * `golang_v2`: My experiments with WEB applications created by [Go Programming language][golang] inside the [Docker][docker] container. Not completed yet...  
 
+* `jupyter`: Project [Jupyter][jupyter] exists to develop open-source software, open-standards, and services for interactive computing across dozens of programming languages. I try to use [Docker][docker] for this.  
+
 * `shell_cnfg`: [Docker][docker] specific aliases.  
 
 * `All Applications`:  
@@ -35,7 +37,7 @@ Codes description
 
 ### License  
 
-This code has been written by ©2019 DimiG  
+This code has been written by ©2021 DimiG  
 
 [docker]:https://www.docker.com
 [rust]:https://www.rust-lang.org
@@ -56,3 +58,4 @@ This code has been written by ©2019 DimiG
 [heroku]:https://en.wikipedia.org/wiki/Heroku
 [micropython]:https://micropython.org
 [virtualbox]:https://www.virtualbox.org
+[jupyter]:https://jupyter.org
